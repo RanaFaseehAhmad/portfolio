@@ -1,0 +1,52 @@
+.Experience {
+    /* border: 1px solid white; */
+    width: 100%;
+    max-width: 65%;
+    margin: 50px  auto 0 auto;
+    /* height: calc(80vh - 4rem); */
+}
+
+.experienceTitle {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.experiencePara {
+    width: 70%;
+    max-width: 50rem;
+    margin: 20px auto 50px auto;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.4;
+}
+
+.clientsBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.DivFacebook,
+.DivWalmart,
+.DivMicrosoft,
+.Divadobe {
+    padding: 10px;
+    width: 200px;
+    height: 100px;
+}
+.clientsBox img{
+    object-fit: contain;
+    width: 100%;
+}
+@media only screen and (max-width: 320px) {
+    .experienceTitle     {
+
+        font-size: 2rem;
+    }
+
+
+}

@@ -1,0 +1,87 @@
+.skillssection {
+    overflow: hidden;
+    /* background: rgb(26, 25, 25); */
+    width: 100%;
+    /* max-width: 65rem; */
+    margin: 20px auto 0 auto;
+    border-radius: 5px;
+    /* border: 1px solid white; */
+
+}
+
+.skillTitle {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.skillPara {
+    width: 70%;
+    max-width: 50rem;
+    margin: 20px auto 50px auto;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.4;
+
+}
+
+.skillbox {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    padding: 18px;
+    margin: 16px auto 0 auto;
+    background-color: #212222;;
+    color: white;
+    max-width: 50rem;
+    border-radius: 10px;
+}
+
+.skilldesc {
+    font-size: 1rem;
+    /* Change to a responsive unit */
+    font-weight: 100;
+    flex: 1;
+    /* Allow this to grow to fill available space */
+    min-width: 200px;
+    /* Minimum width for responsiveness */
+    padding: 0 16px;
+    /* Add some padding for spacing */
+}
+
+.firstimg {
+    width: auto;
+    height: 40px;
+    padding: 0 18px;
+}
+
+@media (max-width: 768px) {
+    .skill {
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
+        align-items: flex-start;
+        /* Align items to the start*/
+    }
+
+    .skilldesc {
+        text-align: left;
+        /* Align text to the left */
+        font-size: 0.9rem;
+        /* Smaller font size for mobile */
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .skillTitle {
+        font-size: 2rem;
+    }
+
+
+}

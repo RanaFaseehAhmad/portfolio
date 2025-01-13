@@ -1,0 +1,54 @@
+.worksection {
+    /* height: calc(100vh - 4rem); */
+    overflow: hidden;
+    width: 100%;
+    margin: 20px auto 0 auto;
+}
+
+.worktitle {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.workpara {
+    width: 70%;
+    max-width: 50rem;
+    margin: 20px auto 50px auto;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.4;
+}
+
+.firstcards,
+.secondcards {
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.workcard {
+    padding: 10px;
+    /* border: 1px solid white; */
+    width: 230px;
+    height: 300px;
+}
+
+.worksection img {
+    border-radius: 8px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+@media only screen and (max-width: 320px) {
+    .worktitle    {
+
+        font-size: 2rem;
+    }
+
+
+}

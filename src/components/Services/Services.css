@@ -1,0 +1,36 @@
+.ServicesSec {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Servicesfirstcard {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    max-width: 80%;
+
+
+}
+.Servicesfirstcard h2{
+    margin-top: 10px;
+}
+.Servicesfirstcard p{
+    color:#bac8d3
+}
+
+.Servicesfirstcard .card {
+  
+    border-radius: 8px;
+    width: 355px;
+    height: 320px;
+    overflow: hidden;
+    background-color: #212222;
+    padding: 16px;
+    margin: 10px;
+    /* border: 1px solid white; */
+}
