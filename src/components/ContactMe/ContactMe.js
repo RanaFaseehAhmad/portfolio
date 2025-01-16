@@ -15,7 +15,8 @@ function ContactMe() {
                 <textarea className='Message' placeholder='Type your message here...' rows={5} />
                 <button className='Submit' type='Submit'>Submit </button>
                 <div className='SocialIcons'>
-                    <img src={facebookIcon} alt='icon'></img>
+                    <a href=''> <img src={facebookIcon} alt='icon'></img>
+                    </a>
                     <img src={linkedinIcon} alt='icon'></img>
                     <img src={instagramIcon} alt='icon'></img>
                     <img src={twitterIcon} alt='icon'></img>

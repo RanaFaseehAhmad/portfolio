@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 200px;
     height: auto;
     width: 100%;
     max-width: 70vw;
@@ -45,39 +45,69 @@ button {
 
 }
 
-.hiremebtn {
+/* .hiremebtn {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
     background-color: white;
     color: black;
-    width: 120px;
+    width: 136px;
     padding: 10px;
     border: none;
     border-radius: 20px;
     outline: none;
+} */
+.githubbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    width: 136px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    cursor:pointer;
 }
 
-.fa-briefcase {
+/* .fa-briefcase, */
+ .fa-github {
     padding: 0 5px;
 }
 
 
 .introPic {
-    z-index: -1;
+    z-index: -1; /* Keeps the image behind other elements */
+    object-fit: cover; /* Ensures proportional scaling */
+    width: 50%; /* Limits the width to a reasonable size */
+    max-width: 550px; /* Prevents the image from getting too large */
+    max-height: 90vh; /* Ensures it doesn’t exceed viewport height */
+    position: absolute; /* Maintains its positioning */
+    top: 10%; /* Adjusts vertical alignment */
+    right: 5%;
+    /* z-index: -1;
     object-fit: cover;
     height:90vh;
     position: absolute;
-    top: 5px;
-    right: 8px;
+    top: 5px; */
+    /* right: 8px; */
     /* border: 1px solid white; */
     /* width: auto; */
 }
 @media only screen and (max-width: 285px) {
-    
+    .introContent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .introContent h1{
         font-size: 18px;
+    }
+    .githubbtn{
+        width: 136px;
     }
 }
 @media only screen and (min-width: 285px) and (max-width:320px) {
@@ -91,14 +121,47 @@ button {
     }
 }
 @media only screen and  (max-width:431px) {
+    .intro {
+       min-height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;
+    }
+    .introContent{
+        margin-top: 150px;
+        text-align: center;
+        width: 90%;
+    }
+   
     .introPic{
-    text-align: center;
-    height: 55vh;
-    right: -47px;
+    /* text-align: center;
+    height: 55vh;*/
+    /* right: auto;  */
+    margin: 0 auto;
+    width: 90%; /* Utilizes most of the screen width */
+    max-width: 300px; /* Keeps it compact on very small screens */
+    height: auto; /* Ensures no distortion */
+    }
+    .githubbtn{
+        margin-right: auto;
+        margin-left: auto;
     }
 }
-@media only screen and (max-width:580px) {
+/* @media only screen and (max-width:580px) {
     .introContent{
         max-width: none;
+    }
+} */
+@media only screen and (max-width: 768px) {
+   
+    .introPic {
+        display: flex;
+        align-items: center;
+        position: absolute; /* Stacks the image below text */
+        width: 70%; /* Reduces image width for smaller screens */
+        max-width: 300px; /* Further limits the size */
+        margin-top: 20px; /* Adds space between text and image */
     }
 }

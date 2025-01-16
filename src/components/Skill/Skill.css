@@ -73,8 +73,9 @@
     .skilldesc {
         text-align: left;
         /* Align text to the left */
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         /* Smaller font size for mobile */
+        
     }
 }
 
@@ -82,6 +83,10 @@
     .skillTitle {
         font-size: 2rem;
     }
-
-
+    .skilldesc{
+      overflow-wrap: break-word;
+        padding: 0 12px;
+    }
+    
+    
 }
